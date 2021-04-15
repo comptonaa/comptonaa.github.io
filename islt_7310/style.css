@@ -1,3 +1,18 @@
 h1{
-    color: #000298ff
+    color: #000066;
+    font-family: Georgia;
+    text-align: center; 
+}
+
+h2{
+    color: #666600;
+    font-family: Lato;
+}
+
+ul{list-style-type: square;
+}
+
+
+body{ 
+    background-color: #CCCC99;
 }
