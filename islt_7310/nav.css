@@ -17,5 +17,9 @@
 
 .vertical-menu a.active {
   background-color: #003366;
-  color: white;
+  color: #FFFFFF;
+}
+
+ul{
+    list-style-type: none;
 }
