@@ -2,7 +2,9 @@
 .vertical-menu {
   width: 200px;
 }
-
+.sticky {
+  position: fixed;
+}
 .vertical-menu a {
   background-color: #666600;
   color: #FFFFFF;
