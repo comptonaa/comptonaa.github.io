@@ -1,29 +1,38 @@
-.navbar
-
-nav ul {
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  color: #ffffff;
-}
-  
+  width: 150px;
+  color: #666600;
+ }
+nav ul li {
+    list-style-type: none;
+    width:150px;
+    position: relative;
+    text-align: center; 
+    font-weight: bold;
+    color: #ffffff;
+   }
 nav ul li {
   margin-bottom: 2px
 }
 
-nav a {
+li a {
   display: block;
   border: 3px solid #003366;
   width: 150px;
   padding: 15px 15px 15px 15px; 
+  color: #ffffff;
 }
 
 nav a:link{
   background-color: #666600;
+  color: #ffffff;
   }
 
-Nav a:hover, nav a:focus{
+nav a:hover{
 background-color: #003366;
+color: #ffffff;
 }
 
 nav a:active {
