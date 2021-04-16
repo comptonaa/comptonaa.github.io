@@ -1,3 +1,4 @@
+:not(.goals)
 
 nav ul {
   list-style-type: none;
@@ -45,4 +46,3 @@ nav ul>li ul {
 nav>ul>li:hover>ul{
   display: block;
 }
-:not(.goals)
