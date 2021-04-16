@@ -10,7 +10,7 @@ nav ul {
     position: relative;
     text-align: center; 
     font-weight: bold;
-    color: #FFFFFF;
+    font: color #FFFFFF;
   }
 nav ul li {
   margin-bottom: 2px
