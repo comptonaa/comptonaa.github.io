@@ -11,7 +11,7 @@ nav ul {
     top: 0;
     text-align: center; 
     font-weight: bold;
-    color: dark magenta;
+    color: #003366;
   }
 nav ul li {
   margin-bottom: 2px
@@ -19,20 +19,20 @@ nav ul li {
 
 nav a {
   display: block;
-  border: 3px dotted magenta;
+  border: 3px solid #666600;
   padding: 15px 15px 15px  15px; 
 }
 
 nav a:link{
-  background-color: white;
+  background-color: #666600;
   }
 
 Nav a:hover, nav a:focus{
-background-color: cornsilk;
+background-color: #666600;
 }
 
 nav a:active {
-  background-color: aquamarine;
+  background-color: #003366;
 }
 
 nav ul>li ul {
