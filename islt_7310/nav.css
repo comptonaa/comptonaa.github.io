@@ -6,11 +6,12 @@ nav ul {
   padding: 0;
 }
   ul li {
+    list-style-type: none;
     width:150px;
     position: relative;
     text-align: center; 
     font-weight: bold;
-    font: color #FFFFFF;
+    color: #FFFFFF;
   }
 nav ul li {
   margin-bottom: 2px
