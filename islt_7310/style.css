@@ -21,11 +21,11 @@ body{
 /* Box model for paragraphs */
 p {
     background-color: #FFFFCC;
-    width: 100%;
+    width: fit-content (20em);
     border: none;
     padding: none;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 /* CSS pseudo-element for different first letter in each paragraph */
 p:first-letter{
@@ -41,4 +41,9 @@ p:first-letter{
  /* reducing space after unordered lists */
  ul {
      margin-bottom: -10px;
+     text-indent: .5em;
  }
+
+ #navbar {
+    text-align: center;
+  }
