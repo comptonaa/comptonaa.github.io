@@ -23,8 +23,9 @@ p {
     background-color: #FFFFCC;
     width: 100%;
     border: none;
-    padding: 5px;
-    margin: 20px;
+    padding: none;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 /* CSS pseudo-element for different first letter in each paragraph */
 p:first-letter{
