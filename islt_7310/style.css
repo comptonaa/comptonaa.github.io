@@ -24,7 +24,7 @@ p {
     width: 100%;
     border: none;
     padding: 20px;
-    margin: 20px;
+   
 }
 /* CSS pseudo-element for different first letter in each paragraph */
 p:first-letter{
