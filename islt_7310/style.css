@@ -21,7 +21,7 @@ body{
 /* Box model for paragraphs */
 p {
     background-color: #FFFFCC;
-    
+    width: 1800px;
     border: none;
     padding: 20px;
     margin: 0px;
