@@ -1,42 +1,66 @@
-.navbar ul {
+#navbar ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 150px;
-  color: #666600;
- }
-nav ul li {
-    list-style-type: none;
-    width:150px;
-    position: relative;
-    text-align: center; 
-    font-weight: bold;
-    color: #ffffff;
-   }
-nav ul li {
-  margin-bottom: 2px
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 
-li a {
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+
+#navbar ul ul li {float: none;}
+
+#navbar ul li:hover > ul {
   display: block;
-  border: 3px solid #003366;
-  width: 150px;
-  padding: 15px 15px 15px 15px; 
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
-nav a:link{
+#navbar > ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#navbar ul li a {
+  text-align: center;
+  display: block;
+  width: 175px;
+  padding: 1em 0;
+  text-decoration: none;
+  background-color: #666600;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-right: 2px solid white;
+}
+
+#navbar ul li a.lasitem { border-right: none;}
+
+#navbar ul li a.current {color:yellow}
+
+#navbar a:link{
   background-color: #666600;
   color: #ffffff;
   }
 
-nav a:hover{
+#navbar a:hover{
 background-color: #003366;
 color: #ffffff;
 }
 
-nav a:active {
+#navbar a:active {
   background-color: #003366;
+  color: #ffffff;
 }
 
-
+#navbar.sticky {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

@@ -1,14 +1,43 @@
 h1{
     color: #000066;
     font-family: Georgia;
-    text-align: center; 
+    text-align: center;
+    margin-top: 50px; 
 }
 
 h2{
-    color: #666600;
+    color: #333300;
     font-family: Lato;
+    margin: 0px;
+    text-indent: 1em;
+    font-size: 110%;
 }
 
 body{ 
-    background-color: #CCCC99;
+    background-color: #FFFFCC;
+    font-family: lato;
 }
+
+/* Box model for paragraphs */
+p {
+    background-color: #FFFFCC;
+    width: 900px;
+    border: none;
+    padding: 20px;
+    margin: 0px;
+}
+/* CSS pseudo-element for different first letter in each paragraph */
+p:first-letter{
+    font-size: 150%;
+    font-family: georgia;
+    color: #333300; 
+ }
+ /* CSS pseudo-element for indenting each paragraph */
+ p::first-line{
+     text-indent: 2em;
+ }
+
+ /* reducing space after unordered lists */
+ ul {
+     margin-bottom: -10px;
+ }
