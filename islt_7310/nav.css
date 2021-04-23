@@ -1,6 +1,26 @@
+/* W3schools CSS validation returned no errors - 4/22/2021 */ 
+
+#navbar {
+    position: sticky;
+    text-align: center;
+  }
+
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #333300;
+    height: 500px;
+    color: #ffffff;
+    border-radius: 10px;
+  }
+
+#navbar .topnav-centered a {
+  text-align: center;
+}
+
 #navbar ul {
   list-style-type: none;
-  position: sticky;
+  position: relative;
   top: 0;
   width: 100%;
 }
@@ -57,14 +77,4 @@ color: #ffffff;
 #navbar a:active {
   background-color: #003366;
   color: #ffffff;
-}
-
-#navbar.sticky {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-#navbar .topnav-centered a {
-  text-align: center;
 }
