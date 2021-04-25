@@ -1,30 +1,119 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-               <meta charset="utf-8">
-<nav>
 
-<a>
-    <p>
-    <a href="#"> Project Page</a>
-  </p>
-</a>
-    <p>
-        <ul>
-            <li> <a href="index.html"> Home</a> </li>
-            <li> <a href="about.html"> About</a> </li>
-     </ul>
-        <ul>
-        <li class="active"><a href="#">Menu 1</a></li>
-        <li><a href="#">Menu 2</a>
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                </ul>
-        </li>
-        <li><a href="#">Project</a></li>
-        </ul>
-    </p>
-</nav>
-</head>
+  <head>
+    <meta charset="utf-8">
+      <title>Experience</title>
+      <meta name="viewport" content="width=device-width">
+
+<!--CSS style sheet link-->
+    <link rel="stylesheet" href="style.css">
+<!--Changed navigation to horizontal with drop-down-->
+    <link rel="stylesheet" href="nav1.css">    
+
+ </head>
+
+ <body>
+
+  <header>
+      <nav class="navbar">
+          <div class="branding">
+              <h2><a href="#" class="branding-logo">Andrea Compton</a></h2>
+          </div>
+        
+          <label for="input-hamburger" class="hamburger"></label>
+          <input type="checkbox" id="input-hamburger" hidden>
+
+          <ul class="menu">
+              <li><a href="index.html" class="menu-link">Home</a></li>
+
+              <li><a href="about.html" class="menu-link">About</a></li>
+
+              <li><a href="reflection.html" class="menu-link">Reflection</a></li>
+
+              <li class="has-dropdown">
+                  <a href="project.html" class="menu-link">Experience  
+                  <span class="arrow"></span>
+                  </a>
+                  <ul class="submenu">
+                      <li><a href="#" class="menu-link">Project 1</a></li>
+                      <li><a href="#" class="menu-link">Project 2</a></li>
+                      <!--<li class="has-dropdown">-->
+                       <li><a href="#" class="menu-link">Project 3</a></li> 
+                      <!--    <span class="arrow"></span>
+                          </a>
+                          <ul class="submenu">
+                              <li><a href="#" class="menu-link">Project A</a></li>
+                              <li><a href="#" class="menu-link">Project B</a></li>
+                              <li class="has-dropdown">
+                                  <a href="#" class="menu-link">Project C 
+                                  <span class="arrow"></span>
+                                  </a>
+                                  <ul class="submenu">
+                                      <li><a href="#" class="menu-link">Item 1</a></li>
+                                      <li><a href="#" class="menu-link">Item 2</a></li>
+                                      <li><a href="#" class="menu-link">Item 3</a></li>
+                                      <li><a href="#" class="menu-link">Item 4</a></li>
+                                  </ul>
+                              </li>
+                              <li><a href="#" class="menu-link">Project D</a></li>
+                          </ul>
+                      </li>-->
+                      <li><a href="#" class="menu-link">Project 4</a></li>
+                  </ul>
+              </li>
+
+              <li><a href="#" class="menu-link">Contact</a></li>
+          </ul>
+      </nav>
+  </header> 
+
+<div class="flex-container">
+    <main>
+        <h1>Experience</h1>
+
+        <h2>Learning Technologies and Design Competencies</h2>
+            <ul>
+            <li>Design and Development of Learning Systems</li>
+            <li>Front-End Analysis and System Evaluation</li>
+            <li>Leadership & Social Responsibility</li>
+            </ul>
+
+            <h2>The supporting projects for this website are:</h2> 
+            <ul><li>Final project from Intro to Digital Media</li></ul>
+            <p>The final project from Intro to Digital Media is a course portfolio. The project highlights four areas – digital images, audio, video, and the final 
+                Google Site designed to house these. The digital image is a flyer, designed using Adobe Illustrator and Photoshop, that identifies and explains the 
+                essential elements of an online course homepage. The audio project was created in Adobe Audition and coincides with the digital image as an audio tour 
+                of the essential elements of an online course homepage. The video was created with Camtasia and provides a video walkthrough of the essentials of an 
+                online course homepage using digital images as visual effects.
+            </p>
+            <ul><li>Final project from Designing Online</li></ul>
+            <p>Designing Online concentrated on creating meaningful outcomes for online learning and designing online lessons to support those outcomes. This was 
+                accomplished using various software tools, learning activities, and assessments. The final project was a design challenge using Google Sites to create 
+                instructional materials, learning activities, and assessments for applying Universal Design for Learning concepts and principles to course development. 
+                The site walks the learner through the three major segments of UDL, includes learning activities for each segment, and assessments as it allows them 
+                to read, understand, and apply the concepts.
+            </p>
+            <ul><li>Final project from Front End Analysis</li></ul>
+            <p>The final project for Front End Analysis is an ASK system that was developed to help faculty understand how to prepare for a Quality Matters Peer Review 
+                at St Charles Community College. This project was created using Google Sites. The outcomes of the ASK system are to understand the basics of a Quality Matters 
+                rubric and its purpose, apply the standards in designing/re-designing their online, hybrid, and remote courses, and discover how they can become internal peer 
+                reviewers at the institution. The ASK system is divided into three main segments and goes down three levels. 
+            </p> 
+            <ul><li>Final project from Intro to VR-enabled Instructional Design – Seminar in ISLT</li></ul>  
+            <p>The final project for Intro to VR-enabled Instructional Design was to work with a group to design a cohesive learning space in virtual reality using OpenSim 
+                as the platform. I worked in a group of three people to design the environment, classroom space, and instructional materials having to do with space travel. 
+                The environment consisted of three learning spaces, connected via ports and walkways, appearing as mini planets on the surface of Mars. Each space provides 
+                instruction in different areas of space travel, included interactive elements, and allowed users to experience all of this in a virtual reality environment. 
+                Since OpenSim will not be available for this website, screen shots from that project will be used in lieu of a live VR environment. 
+            </p>    
+        </p>
+    </main>
+</div>
+<footer>
+    <div class="footer">
+    Email: <a href="mailto:acd2y@umsystem.edu">acd2y@umsystem.edu</a> | Copyright 2021 | Andrea Compton | All rights reserved
+  </div>    
+  </footer>
+  
+  </html>
