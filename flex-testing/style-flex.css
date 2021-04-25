@@ -1,0 +1,203 @@
+@media(min-width: 900px){
+    .container-1{
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        box-sizing: border-box;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+
+    /* align-items: flex-start;
+        align-items: flex-end;
+        align-items: center;
+        flex-direction: column */
+        
+    }
+    
+    .container-2{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+}
+
+.container-1 div {
+    border: none;
+    padding: 0px;
+}
+
+.box-side{
+    order: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-basis: 17.5%;
+    
+}
+
+  /* Fake image, just for this example */
+  .headshot {
+    background-color: #FFFFCC;
+    width: 100%;
+    padding: 20px;
+  }
+
+.img {
+    border-radius: 50%;
+    flex-basis: 20%;
+    padding: 5px;
+    border: 5px solid;
+    border-color: #000066;
+    height: auto;
+}
+
+.box-main{
+    order: 2;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-basis: 77.5%;
+}
+
+.container-2 div {
+    border: none;
+    padding: 0px;
+    width: 100%;
+}
+
+.project-buttons-container {
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+    background-color: #FFFFFF;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-buttons {
+    background-color: #666600;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+  /* Footer */
+  .footer {
+    position: sticky;
+    flex-direction: column;
+    bottom: 0px;
+    padding: 20px;
+    text-align: center;
+    background: #333300;
+  }
+
+  @media screen and (max-width: 800px) {
+    footer {
+        font-size: 100%;
+        text-align:center;
+    }
+}
+
+h1{
+    color: #000066;
+    font-family: Georgia;
+    text-align: center;
+}
+
+h2{
+    color: #333300;
+    font-family: Lato;
+    text-indent: 1em;
+    font-size: 110%;
+}
+
+body{ 
+    color: #333300;
+    background-color: #FFFFCC;
+    font-family: lato;
+}
+
+/* Box model for paragraphs */
+p {
+    background-color: #FFFFCC;
+    color: #333300;
+    font-family: 'Lato';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.15;
+    border: none;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 2em;
+}
+/* Media Queries for responsive design */
+@media  screen and (max-width: 600px) {
+    p {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    p {
+        font-size: 1.25rem;
+        line-height: 1.25;
+    }
+}
+
+
+
+/* CSS pseudo-element for different first letter in each paragraph */
+p:first-letter{
+    font-size: 150%;
+    font-family: georgia;
+    color: #333300; 
+ }
+ /* CSS pseudo-element for indenting each paragraph */
+ p::first-line{
+     text-indent: 2em;
+ }
+
+ /* reducing space after unordered lists */
+ ul {
+     color: #333300;
+     margin-bottom: 0px;
+     text-indent: .5em;
+ }
+
+blockquote {
+    text-align: center;
+    color: #333300;
+}
+/*
+.blue-background {
+    background-image: "blue-smooth-seamless-background";
+    background-color: #FFFFCC;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 20%;
+}
+
+License: CC0 Public Domain
+
+Alex Borland has released this “Blue Smooth Seamless Background” image under Public Domain license. 
+It means that you can use and modify it for your personal and commercial projects. If you intend to 
+use an image you find here for commercial use, please be aware that some photos do require a model 
+or a property release. Pictures featuring products should be used with care.
+*/
+
+
+
