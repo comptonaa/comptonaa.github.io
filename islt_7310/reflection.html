@@ -1,34 +1,107 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-               <meta charset="utf-8">
-               <title>Reflection</title>
-<!--CSS style sheet links-->
-               <link rel="stylesheet" href="style.css">
+
+  <head>
+    <meta charset="utf-8">
+      <title>About Me</title>
+      <meta name="viewport" content="width=device-width">
+
+<!--CSS style sheet link-->
+    <link rel="stylesheet" href="style.css">
 <!--Changed navigation to horizontal with drop-down-->
-               <link rel="stylesheet" href="nav.css">        
+    <link rel="stylesheet" href="nav1.css">    
 
-</head>
+ </head>
 
-<nav>
-    <nav id="navbar">
-       <ul>
-        <li> <a href="index.html"> Home</a> </li>
-        <li> <a href="about.html"> About</a> </li>
-        <li> <a href="reflection.html"> Reflection</a></li>
-        <li class="lastitem"><a href="#experience.html"> Experience</a>
-            <ul>
-                <li><a href="#">Project 1</a></li>
-                <li><a href="#">Project 2</a></li>
-                <li><a href="#">Project 3</a></li>
-            </ul>
-            </li>
-        <li> <a href="#contact.html"> Contact</a></li>
-        </ul>
+ <body>
 
-</nav></nav>
+  <header>
+      <nav class="navbar">
+          <div class="branding">
+              <h2><a href="#" class="branding-logo">Andrea Compton</a></h2>
+          </div>
+        
+          <label for="input-hamburger" class="hamburger"></label>
+          <input type="checkbox" id="input-hamburger" hidden>
+
+          <ul class="menu">
+              <li><a href="index.html" class="menu-link">Home</a></li>
+
+              <li><a href="about.html" class="menu-link">About</a></li>
+
+              <li><a href="reflection.html" class="menu-link">Reflection</a></li>
+
+              <li class="has-dropdown">
+                  <a href="#" class="menu-link">Experience  
+                  <span class="arrow"></span>
+                  </a>
+                  <ul class="submenu">
+                      <li><a href="#" class="menu-link">Project 1</a></li>
+                      <li><a href="#" class="menu-link">Project 2</a></li>
+                      <!--<li class="has-dropdown">-->
+                       <li><a href="#" class="menu-link">Project 3</a></li> 
+                      <!--    <span class="arrow"></span>
+                          </a>
+                          <ul class="submenu">
+                              <li><a href="#" class="menu-link">Project A</a></li>
+                              <li><a href="#" class="menu-link">Project B</a></li>
+                              <li class="has-dropdown">
+                                  <a href="#" class="menu-link">Project C 
+                                  <span class="arrow"></span>
+                                  </a>
+                                  <ul class="submenu">
+                                      <li><a href="#" class="menu-link">Item 1</a></li>
+                                      <li><a href="#" class="menu-link">Item 2</a></li>
+                                      <li><a href="#" class="menu-link">Item 3</a></li>
+                                      <li><a href="#" class="menu-link">Item 4</a></li>
+                                  </ul>
+                              </li>
+                              <li><a href="#" class="menu-link">Project D</a></li>
+                          </ul>
+                      </li>-->
+                      <li><a href="#" class="menu-link">Project 4</a></li>
+                  </ul>
+              </li>
+
+              <li><a href="#" class="menu-link">Contact</a></li>
+          </ul>
+      </nav>
+  </header> 
+<!--Grid - but I do not see anything different in the page except it is slightly lower than the other pages now. The W3schools validation stated no warnings to show.-->
+ <div class="grid-container"></div>
+  <div class="grid-item"></div>
+<!--- <nav>
+  <nav id="navbar">
+     <ul>
+      <li> <a href="index.html"> Home</a> </li>
+      <li> <a href="about.html"> About</a> </li>
+      <li> <a href="reflection.html"> Reflection</a></li>
+      <li class="lastitem"><a href="#experience.html"> Experience</a>
+          <ul>
+              <li><a href="#">Project 1</a></li>
+              <li><a href="#">Project 2</a></li>
+              <li><a href="#">Project 3</a></li>
+          </ul>
+          </li>
+      <li> <a href="#contact.html"> Contact</a></li>
+      </ul>
+    -->
+<!--Hamburger menu-->
+<!--<a href=javascript:void(0); class="icon" onclick="myFunction()"></a>-->
+
+
+<!--Flex Container - but again I do not see any difference in my page formatting-->
+<div class="flex-container"></div>
 
 <main>
+<div class="row">
+    <div class="side">
+    <div class="headshot">
+    <img src="andreac.jpg" alt="Andrea Compton photo">
+    </div></div></div>
+    
+    <div class="main">
+
 <h1>Reflection</h1>
 
 <p>
@@ -63,12 +136,12 @@ or an organization where I can help build an online learning/training program us
 in universal design for learning and the courses I have taken in the EdS and UX certificate programs will allow me take that interest and apply good methodology, best practices, 
 and use the appropriate technologies in the process of improving or building an online program.
 </p>
-
+</div>
 </main>
 
-<br><br>
+
 <footer>
-    <div id="footer">
+    <div class="footer">
     Email: <a href="mailto:acd2y@umsystem.edu">acd2y@umsystem.edu</a> | Copyright 2021 | Andrea Compton | All rights reserved
 </div>    
 </footer>

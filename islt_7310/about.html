@@ -9,13 +9,68 @@
 <!--CSS style sheet link-->
     <link rel="stylesheet" href="style.css">
 <!--Changed navigation to horizontal with drop-down-->
-    <link rel="stylesheet" href="nav.css">    
+    <link rel="stylesheet" href="nav1.css">    
 
  </head>
+
+ <body>
+
+  <header>
+      <nav class="navbar">
+          <div class="branding">
+              <h2><a href="#" class="branding-logo">Andrea Compton</a></h2>
+          </div>
+        
+          <label for="input-hamburger" class="hamburger"></label>
+          <input type="checkbox" id="input-hamburger" hidden>
+
+          <ul class="menu">
+              <li><a href="index.html" class="menu-link">Home</a></li>
+
+              <li><a href="about.html" class="menu-link">About</a></li>
+
+              <li><a href="reflection.html" class="menu-link">Reflection</a></li>
+
+              <li class="has-dropdown">
+                  <a href="#" class="menu-link">Experience  
+                  <span class="arrow"></span>
+                  </a>
+                  <ul class="submenu">
+                      <li><a href="#" class="menu-link">Project 1</a></li>
+                      <li><a href="#" class="menu-link">Project 2</a></li>
+                      <!--<li class="has-dropdown">-->
+                       <li><a href="#" class="menu-link">Project 3</a></li> 
+                      <!--    <span class="arrow"></span>
+                          </a>
+                          <ul class="submenu">
+                              <li><a href="#" class="menu-link">Project A</a></li>
+                              <li><a href="#" class="menu-link">Project B</a></li>
+                              <li class="has-dropdown">
+                                  <a href="#" class="menu-link">Project C 
+                                  <span class="arrow"></span>
+                                  </a>
+                                  <ul class="submenu">
+                                      <li><a href="#" class="menu-link">Item 1</a></li>
+                                      <li><a href="#" class="menu-link">Item 2</a></li>
+                                      <li><a href="#" class="menu-link">Item 3</a></li>
+                                      <li><a href="#" class="menu-link">Item 4</a></li>
+                                  </ul>
+                              </li>
+                              <li><a href="#" class="menu-link">Project D</a></li>
+                          </ul>
+                      </li>-->
+                      <li><a href="#" class="menu-link">Project 4</a></li>
+                  </ul>
+              </li>
+
+              <li><a href="#" class="menu-link">Contact</a></li>
+          </ul>
+      </nav>
+  </header> 
 <!--Grid - but I do not see anything different in the page except it is slightly lower than the other pages now. The W3schools validation stated no warnings to show.-->
  <div class="grid-container"></div>
   <div class="grid-item"></div>
- <nav>
+<!--- <nav>
   <nav id="navbar">
      <ul>
       <li> <a href="index.html"> Home</a> </li>
@@ -30,21 +85,27 @@
           </li>
       <li> <a href="#contact.html"> Contact</a></li>
       </ul>
-
+    -->
 <!--Hamburger menu-->
-<a href=javascript:void(0); class="icon" onclick="myFunction()"></a>
+<!--<a href=javascript:void(0); class="icon" onclick="myFunction()"></a>-->
 
-</nav></nav>
 
 <!--Flex Container - but again I do not see any difference in my page formatting-->
 <div class="flex-container"></div>
 
 <main>
-<h1>
-About Me
-</h1>
 
+<div class="row">
+<div class="side">
+<div class="headshot">
 <img src="andreac.jpg" alt="Andrea Compton photo">
+</div></div></div>
+
+<div class="main">
+
+  <h1>
+    About Me
+    </h1>
 
     <h2>
     Educational Background and Interests
@@ -57,15 +118,18 @@ business from Belmont University in Nashville, TN. After working in the music bu
 make a career change and pursue another interest – teaching. Next, I earned a Master’s in Business Education at 
 Middle Tennessee State University. Teaching eventually led me to St Charles Community College where I began in 2006 
 as an associate professor, later a full professor, and now as Dean of Online and E-Learning in 2018. Coming to St Charles Community College also allowed me to also be closer to family. I am a geek at heart 
- and enjoy working with new technology, watching movies, traveling, and spending time with my family which includes three dogs.
+and enjoy working with new technology, watching movies, traveling, and spending time with my family which includes three dogs.
   </p>
   <p>
-    Feel free to review my current<a href="AndreaComptonResume_2021.pdf" target="_blank"> resume.</a>
+    Feel free to review my current <a href="AndreaComptonResume_2021.pdf" target="_blank"> resume</a>.
   </p>
 
   <blockquote>
     <b><em>“If you don’t like the road you’re walking, pave another one”</em> – Dolly Parton</b> 
   </blockquote> 
+
+</div>
+
 </main>
 
 <br><br>
@@ -74,7 +138,7 @@ as an associate professor, later a full professor, and now as Dean of Online and
     <div class="grid-item"></div>
 
 <footer>
-  <div id="footer">
+  <div class="footer">
   Email: <a href="mailto:acd2y@umsystem.edu">acd2y@umsystem.edu</a> | Copyright 2021 | Andrea Compton | All rights reserved
 </div>    
 </footer>

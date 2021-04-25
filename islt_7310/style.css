@@ -1,14 +1,9 @@
-/* W3schools CSS validation returned no errors - 4/22/2021 */ 
+/* W3schools CSS validation returned no errors - 4/25/2021 */ 
 
-
-    /*semantic element styles*/
-    header {border-bottom: 1px; color: #000066; text-align: center;}
-    nav {border-bottom: none;  text-align: center;}
-    main {float: left; height: 350px; width: 95%;}
 
     .grid-container {
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: 100px 100px 100px 100px;
     }
 
     .grid-item {
@@ -18,6 +13,53 @@
     .flex-container {
         display: flex;
     }
+
+    /* Column container */
+   .row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 20%;
+    background-color: #FFFFCC;
+    padding: 0px;
+  }
+  
+  /* Main column */
+  .main {
+    flex: 80%;
+    background-color: #FFFFCC;
+    margin-left: 20px;
+    padding: 20px;
+  }
+  
+  /* Fake image, just for this example */
+  .headshot {
+    background-color: #FFFFCC;
+    width: 100%;
+    padding: 20px;
+  }
+  
+
+
+  /* Footer */
+  .footer {
+    position: sticky;
+    bottom: 0px;
+    padding: 20px;
+    text-align: center;
+    background: #333300;
+  }
+
+  @media screen and (max-width: 800px) {
+    footer {
+        font-size: 100%;
+        text-align:center;
+    }
+}
 
 h1{
     color: #000066;
@@ -35,21 +77,48 @@ h2{
 }
 
 body{ 
+    color: #333300;
     background-color: #FFFFCC;
     font-family: lato;
+    
 }
+
+/*
+.blue-background {
+    background-image: "blue-smooth-seamless-background";
+    background-color: #FFFFCC;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 20%;
+}
+
+*/
+
+/*License: CC0 Public Domain
+
+Alex Borland has released this “Blue Smooth Seamless Background” image under Public Domain license. 
+It means that you can use and modify it for your personal and commercial projects. If you intend to 
+use an image you find here for commercial use, please be aware that some photos do require a model 
+or a property release. Pictures featuring products should be used with care.
+*/
+
+
 
 /* Box model for paragraphs */
 p {
     background-color: #FFFFCC;
+    color: #333300;
     font-family: 'Lato';
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.15;
     border: none;
-    padding: 0px;
+    padding: 10px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 30px;
     margin-bottom: 2em;
 }
 /* Media Queries for responsive design */
@@ -68,9 +137,10 @@ p {
 
 img {
     border-radius: 50%;
-    float: left;
     width: 20%;
-    padding: 7.5px;
+    padding: 5px;
+    border: 10px solid;
+    border-color: #000066;
     height: auto;
 }
 
@@ -87,24 +157,12 @@ p:first-letter{
 
  /* reducing space after unordered lists */
  ul {
-     margin-bottom: -10px;
+     color: #333300;
+     margin-bottom: 0px;
      text-indent: .5em;
  }
 
 blockquote {
     text-align: center;
-}
-
-     /*semantic element styles*/
- #footer {
-    position: fixed;
-    text-align: center;
-    bottom: 0px;
-    
-}
-
-@media screen and (max-width: 800px) {
-    footer {
-        font-size: 100%;
-    }
+    color: #333300;
 }
