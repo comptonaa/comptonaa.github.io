@@ -1,6 +1,5 @@
 /* W3schools CSS validation returned no errors - 4/25/2021 */ 
-
-
+/*
     .grid-container {
         display: flex;
         flex-direction: row;
@@ -16,6 +15,7 @@
     .flex-container {
         display: flex;
     }
+*/
 
     /* Column container */
    .row {  
@@ -46,8 +46,6 @@
     padding: 20px;
   }
   
-
-
   /* Footer */
   .footer {
     position: sticky;
@@ -86,30 +84,6 @@ body{
     
 }
 
-/*
-.blue-background {
-    background-image: "blue-smooth-seamless-background";
-    background-color: #FFFFCC;
-    height: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    opacity: 20%;
-}
-
-*/
-
-/*License: CC0 Public Domain
-
-Alex Borland has released this “Blue Smooth Seamless Background” image under Public Domain license. 
-It means that you can use and modify it for your personal and commercial projects. If you intend to 
-use an image you find here for commercial use, please be aware that some photos do require a model 
-or a property release. Pictures featuring products should be used with care.
-*/
-
-
-
 /* Box model for paragraphs */
 p {
     background-color: #FFFFCC;
@@ -142,7 +116,7 @@ img {
     border-radius: 50%;
     width: 20%;
     padding: 5px;
-    border: 10px solid;
+    border: 3px solid;
     border-color: #000066;
     height: auto;
 }
@@ -163,12 +137,15 @@ p:first-letter{
  ul {
      color: #333300;
      margin-bottom: 0px;
-     text-indent: .5em;
+     margin-left: .5em;
+     padding-left: 50px;
  }
 
 blockquote {
     text-align: center;
     color: #333300;
+    font: 1.5em "Just Another Hand", cursive;
+    letter-spacing: 1.5px;
 }
 
 .project-buttons-container {
@@ -196,3 +173,43 @@ blockquote {
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+/*print style*/
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    .header {font-family: serif;}
+    .p {font-family: serif;}
+
+    .logo,
+    .navbar,
+    .menu,
+    .header,
+    .side {
+        display: none;
+         }
+         .main-header {
+             margin-bottom: 0;
+             border: none;
+             text-align: center;
+         }
+         a:after {
+             content: "["attr(href)"]";
+             color: blue;
+         }
+         @page {
+             margin: 1in 1in 1in 1in;
+            }
+         p, ul {
+             orphans: 3;
+             widows: 3;
+             font-size: 11pt;
+         }
+         @page:right {
+             content: "Andrea Compton"
+         }
+    }
