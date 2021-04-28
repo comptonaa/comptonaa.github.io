@@ -188,6 +188,9 @@ blockquote {
     .logo,
     .navbar,
     .menu,
+    .menu-link,
+    .submenu,
+    .has-dropdown,
     .img,
     .header,
     .side {
