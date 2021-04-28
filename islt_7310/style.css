@@ -17,6 +17,13 @@
     }
 */
 
+/* Font-face addition */
+
+@font-face {
+    font-family: 'Just Another Hand', cursive;
+    src: url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&family");
+}
+
     /* Column container */
    .row {  
     display: flex;
