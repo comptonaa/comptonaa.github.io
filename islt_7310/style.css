@@ -1,21 +1,5 @@
 /* W3schools CSS validation returned no errors - 4/25/2021 */ 
-/*
-    .grid-container {
-        display: flex;
-        flex-direction: row;
-        grid-template-columns: 100px 100px 100px 100px;
-    }
 
-    .grid-item {
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .flex-container {
-        display: flex;
-    }
-*/
 
 /* Font-face addition */
 
@@ -49,9 +33,14 @@
   /* Fake image, just for this example */
   .headshot {
     background-color: #FFFFCC;
-    width: 100%;
-    padding: 20px;
-  }
+    border-radius: 50%;
+    width: 20%;
+    padding: 5px;
+    border: 3px solid;
+    border-color: #000066;
+    height: auto;
+    mask-image: url(andreac.jpg);
+      }
   
   /* Footer */
   .footer {
@@ -62,7 +51,7 @@
     background: #333300;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     footer {
         font-size: 100%;
         text-align:center;
@@ -118,16 +107,6 @@ p {
         line-height: 1.25;
     }
 }
-
-img {
-    border-radius: 50%;
-    width: 20%;
-    padding: 5px;
-    border: 3px solid;
-    border-color: #000066;
-    height: auto;
-}
-
 
 /* CSS pseudo-element for different first letter in each paragraph */
 p:first-letter{
@@ -189,10 +168,9 @@ blockquote {
         box-shadow: none !important;
         text-shadow: none !important;
     }
-    .header {font-family: serif;}
-    .p {font-family: serif;}
 
-    .logo,
+
+    .branding-logo,
     .navbar,
     .menu,
     .menu-link,
