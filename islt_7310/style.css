@@ -188,6 +188,7 @@ blockquote {
     .logo,
     .navbar,
     .menu,
+    .img,
     .header,
     .side {
         display: none;
