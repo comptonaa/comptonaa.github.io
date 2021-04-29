@@ -22,16 +22,10 @@
     padding: 0px;
   }
   
-  /* Main column */
-  .main {
-    flex: 80%;
-    background-color: #FFFFCC;
-    margin-left: 20px;
-    padding: 20px;
-  }
-  
   /* Fake image, just for this example */
   .headshot {
+    position: flex;
+    flex-wrap: wrap;
     background-color: #FFFFCC;
     border-radius: 50%;
     width: 20%;
@@ -41,34 +35,28 @@
     height: auto;
     mask-image: url(andreac.jpg);
       }
-  
-  /* Footer */
-  .footer {
-    position: sticky;
-    bottom: 0px;
-    padding: 20px;
-    text-align: center;
-    background: #333300;
-  }
 
-  @media screen and (max-width: 900px) {
-    footer {
-        font-size: 100%;
-        text-align:center;
-    }
-}
+  
+  /* Main column */
+  .main {
+    flex: 80%;
+    background-color: #FFFFCC;
+    margin-left: 20px;
+    padding: 20px;
+  }
 
 h1{
     color: #000066;
     font-family: Georgia;
     text-align: center;
-    margin-top: 50px; 
+    padding-top: 10px;
+    padding-bottom: 25px;
 }
 
 h2{
     color: #333300;
     font-family: Lato;
-    margin: 0px;
+    margin-left: 15px;
     text-indent: 1em;
     font-size: 110%;
 }
@@ -77,7 +65,6 @@ body{
     color: #333300;
     background-color: #FFFFCC;
     font-family: lato;
-    
 }
 
 /* Box model for paragraphs */
@@ -94,6 +81,29 @@ p {
     margin-right: 30px;
     margin-bottom: 2em;
 }
+  /* Footer */
+  .footer {
+    bottom: 0px;
+    padding: 20px;
+    text-align: center;
+    background: #333300;
+    list-style-type: none;
+  }
+
+  .footericons {
+    display: flex;
+    margin-right: 0px;
+    margin-left: 0px;
+    justify-content: space-evenly;
+}
+    @media screen and (max-width: 900px) {
+    .footer, .footericons {
+        font-size: 100%;
+        text-align:center;
+    }
+   
+}
+
 /* Media Queries for responsive design */
 @media  screen and (max-width: 600px) {
     p {
@@ -108,12 +118,14 @@ p {
     }
 }
 
-/* CSS pseudo-element for different first letter in each paragraph */
+/* CSS pseudo-element for different first letter in each paragraph 
 p:first-letter{
     font-size: 150%;
     font-family: georgia;
     color: #333300; 
  }
+ */
+
  /* CSS pseudo-element for indenting each paragraph */
  p::first-line{
      text-indent: 2em;
@@ -178,7 +190,8 @@ blockquote {
     .has-dropdown,
     .img,
     .header,
-    .side {
+    .side,
+    .footericons {
         display: none;
          }
          .main-header {
