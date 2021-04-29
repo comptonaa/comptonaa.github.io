@@ -24,7 +24,7 @@
   
   /* Fake image, just for this example */
   .headshot {
-    position: flex;
+    display: flex;
     flex-wrap: wrap;
     background-color: #FFFFCC;
     border-radius: 50%;
