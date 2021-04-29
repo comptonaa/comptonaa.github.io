@@ -85,9 +85,12 @@ p {
   .footer {
     bottom: 0px;
     padding: 20px;
+    color: #FFFFCC;
     text-align: center;
     background: #333300;
     list-style-type: none;
+    background-image: url(olive-seamless-background.jpg);
+
   }
 
   .footericons {
