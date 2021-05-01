@@ -60,10 +60,9 @@ header{
     color: #FFFFCC;
 }
 
-.submenu > li:hover > a{
+.menu > li:hover > a, .submenu > li:hover > a{
     background-color:#003366;
-    color: #FFFFCC;
-    font-size: 1.25em;
+    color: #FFFFCC
 }
 
 /* style submenu */
@@ -183,7 +182,6 @@ header{
         border-left: 0.12em dotted #FFFFCC;
     }
 
-    /*
     .submenu .submenu{
         left: 0;
         top: 0;
@@ -198,7 +196,7 @@ header{
     .submenu > li:hover > a + .submenu{
         position: relative;
     }
-*/
+
     .hamburger{
         width: 2em;
         height: 0.25em;
