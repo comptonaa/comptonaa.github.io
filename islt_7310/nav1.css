@@ -22,6 +22,7 @@ header{
     top: 0;
     background-color: #666600;
     padding-left: 1.5em;
+    padding-right: 1.5em;
     color:#FFFFCC;
 }
 
@@ -54,6 +55,17 @@ header{
     font-size: 1.3rem;
 }
 
+.menu > li:hover > a{
+    background-color:#666600;
+    color: #FFFFCC;
+}
+
+.submenu > li:hover > a{
+    background-color:#003366;
+    color: #FFFFCC;
+    font-size: 1.25em;
+}
+
 /* style submenu */
 
 .has-dropdown{
@@ -75,9 +87,10 @@ header{
 }
 
 .submenu > li > a{
+    font-size: 1em;
     padding: 0.8em 1.5em;
 }
-
+/*
 .submenu .submenu{
     left: -100%;
     top: 0;
@@ -87,18 +100,9 @@ header{
     left: -100%;
     top: 0;
 }
-
-.menu > li:hover > a, .submenu > li:hover > a{
-    background-color:#666600;
-}
-
+*/
 .submenu > li:hover > a{
-    background-color: #003366;
-}
-
-.menu > li:hover > a{
-    background-color:#003366;
-    color: #FFFFCC;
+    background-color: #666600;
 }
 
 /* arrouws */
@@ -179,6 +183,7 @@ header{
         border-left: 0.12em dotted #FFFFCC;
     }
 
+    /*
     .submenu .submenu{
         left: 0;
         top: 0;
@@ -193,7 +198,7 @@ header{
     .submenu > li:hover > a + .submenu{
         position: relative;
     }
-
+*/
     .hamburger{
         width: 2em;
         height: 0.25em;
@@ -227,6 +232,7 @@ header{
         transition: 0.2s transform ease-in-out;
     }
 
+    /*
     .close::before{
         display: none;
     }
@@ -239,7 +245,7 @@ header{
     .close::after{
         transform: rotate(-90deg);
     }
-
+*/
 
  /* reveal menu */
  input[type="checkbox"]:checked + .menu {
