@@ -119,7 +119,7 @@ table td {
     padding: 4px 8px;
     color: #333300;
 }
-
+/*alternate row colors*/
 table tr:nth-child(odd) td {
     background-color: lightblue;
 }
