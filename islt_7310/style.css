@@ -99,6 +99,53 @@ p {
     margin-left: 60px;
     padding-bottom: 0;
 }
+/*Table style*/
+table#degreetable {
+    border-collapse: collapse;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+table th {
+    text-align: left;
+    background-color: #000066;
+    color: #FFFFCC;
+    padding: 4px 30px 4px 8px;
+}
+
+table td {
+    border: 1px solid #333300;
+    padding: 4px 8px;
+    color: #333300;
+}
+
+table tr:nth-child(odd) td {
+    background-color: lightblue;
+}
+
+@media only screen and (max-width: 1250px) {
+    tr {
+        font-size: 16px;
+    }
+
+    table#degreetable {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    tr {
+        font-size: 12px;
+    }
+    table#degreetable {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
 
 /* Footer */
   .footer {
