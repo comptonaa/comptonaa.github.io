@@ -1,4 +1,4 @@
-/* W3schools CSS validation returned no errors - 4/25/2021 */ 
+/* W3schools CSS validation returned no errors - 5/4/2021 */ 
 
 :root{
     box-sizing: border-box;
@@ -24,6 +24,7 @@ header{
     padding-left: 1.5em;
     padding-right: 1.5em;
     color:#FFFFCC;
+    z-index: 1;
 }
 
 .branding-logo{

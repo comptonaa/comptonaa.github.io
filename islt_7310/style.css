@@ -1,4 +1,4 @@
-/* W3schools CSS validation returned no errors - 4/25/2021 */ 
+/* W3schools CSS validation returned no errors - 5/4/2021 */ 
 
 
 /* Font-face addition */
@@ -85,20 +85,18 @@ p {
 .iframe-container {
     position: relative;
     width: 100%;
-    height: 0;
+    height: 330px;
     margin-bottom: 0;
-    padding-bottom: 35%;
     align-items: center;
 }
 
 .iframe-container iframe {
     position: absolute;
     left: 0;
-    width: 30%;
-    height: 50%;
     margin-left: 60px;
     padding-bottom: 0;
 }
+
 /*Table style*/
 table#degreetable {
     border-collapse: collapse;
