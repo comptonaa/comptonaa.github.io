@@ -17,6 +17,7 @@
   /* Create two unequal columns that sits next to each other */
   /* Sidebar/left column */
   .side {
+    display: inline;
     flex: 20%;
     background-color: #FFFFCC;
     padding: 0px;
@@ -122,6 +123,7 @@ table tr:nth-child(odd) td {
     background-color: lightblue;
 }
 
+/* Form styling */
 .formcontainer {
     display:flex;
     align-items: center;
@@ -174,28 +176,47 @@ table tr:nth-child(odd) td {
         background-color: #000066
     }
 
-
-@media only screen and (max-width: 1250px) {
-    tr {
-        font-size: 16px;
-    }
-
-    table#degreetable {
-        width: 50%;
-        margin-left: 25%;
-        margin-right: 25%;
-    }
+ /* reducing space after unordered lists */
+ ul {
+    color: #333300;
+    margin-bottom: 0px;
+    margin-left: .5em;
+    padding-left: 50px;
 }
 
-@media only screen and (max-width: 800px) {
-    tr {
-        font-size: 12px;
-    }
-    table#degreetable {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+blockquote {
+   text-align: center;
+   color: #333300;
+   font: 1.5em "Just Another Hand", cursive;
+   letter-spacing: 1.5px;
+}
+
+/*Button styling for Projects page */
+.project-buttons-container {
+   max-width: 1400px;
+   margin: 40px auto 0 auto;
+   background-color: #FFFFCC;
+   padding: 5px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.project-buttons {
+   background-color: #666600;
+   border: none;
+   color: #FFFFCC;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 20px;
+   margin: 4px 2px;
+   cursor: pointer;
+   font-weight: bold;
+   margin-top: 0;
+   margin-bottom: 20px;
 }
 
 /* Footer */
@@ -207,16 +228,18 @@ table tr:nth-child(odd) td {
     text-align: center;
     background: #333300;
     list-style-type: none;
-    background-image: url(olive-seamless-background.jpg);
 
   }
 
   .footericons {
-    display: flex;
+    display: inline-flex;
     justify-content: space-evenly;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin: 5px 250px;
 }
+
+    .footericons:hover {
+        opacity: 70%;
+    }
 
 /* icon grow transition/animation */
     .icon {
@@ -244,6 +267,29 @@ table tr:nth-child(odd) td {
 }
 
 /* Media Queries for responsive design */
+@media only screen and (max-width: 1250px) {
+    tr {
+        font-size: 16px;
+    }
+
+    table#degreetable {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    tr {
+        font-size: 12px;
+    }
+    table#degreetable {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
 @media  screen and (max-width: 600px) {
     p {
         font-size: 1.15rem;
@@ -265,52 +311,11 @@ p:first-letter{
  }
  */
 
- /* CSS pseudo-element for indenting each paragraph */
+ /* CSS pseudo-element for indenting each paragraph 
  p::first-line{
      text-indent: 2em;
  }
-
- /* reducing space after unordered lists */
- ul {
-     color: #333300;
-     margin-bottom: 0px;
-     margin-left: .5em;
-     padding-left: 50px;
- }
-
-blockquote {
-    text-align: center;
-    color: #333300;
-    font: 1.5em "Just Another Hand", cursive;
-    letter-spacing: 1.5px;
-}
-
-.project-buttons-container {
-    max-width: 1400px;
-    margin: 40px auto 0 auto;
-    background-color: #FFFFCC;
-    padding: 5px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.project-buttons {
-    background-color: #666600;
-    border: none;
-    color: #FFFFCC;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
+*/
 
 /*print style*/
 @media print {
