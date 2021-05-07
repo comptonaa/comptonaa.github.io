@@ -122,6 +122,59 @@ table tr:nth-child(odd) td {
     background-color: lightblue;
 }
 
+.formcontainer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #333300;
+    background-color: #FFFFFF;
+    border-radius:  8px;
+    margin-top: 20px;
+    margin-bottom: 20px;   
+}
+
+.formgroup {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    }
+
+    .formgroup input,
+    .formgroup textarea {
+        width: 100%;
+        padding: 5px;
+        font-size: 18px;
+        border: 1px solid #333300;
+        margin-top: 5px;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    button [type="submit"] {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 20px;
+        font-size: 24px;
+        border-radius: 8px;
+        background-color: #333300;
+        color: #FFFFCC;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    button [type="submit"]:hover {
+        background-color: #000066
+    }
+
+
 @media only screen and (max-width: 1250px) {
     tr {
         font-size: 16px;
