@@ -1,4 +1,4 @@
-/* W3schools CSS validation returned no errors - 5/4/2021 */ 
+/* W3schools CSS validation returned no errors - 5/8/2021 */ 
 
 :root{
     box-sizing: border-box;
@@ -75,6 +75,7 @@ header{
 .submenu{
     position: absolute;
     left: 0;
+    text-align: left;
     background-color: #003366;
     white-space: nowrap;
     padding: 1.5em 0;
