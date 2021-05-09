@@ -1,0 +1,397 @@
+/* W3schools CSS validation returned no errors - 5/8/2021 */ 
+
+/* Font-face addition */
+
+@font-face {
+    font-family: 'Just Another Hand', cursive;
+    src: url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&family");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{ 
+    color: #333300;
+    background-color: #FFFFCC;
+    font-family: "lato";
+}
+ 
+header {
+    position: sticky;
+    top: 0;
+    background-color: #666600;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    color:#FFFFCC;
+    z-index: 1;
+}
+
+aside {
+    display:inline;
+    float: left;
+    justify-content: center;
+    width: 15%;
+    height: auto;
+    background:#000066;
+    padding: 30px;
+}
+
+article {
+    float: left;
+    padding: 30px;
+    width: 85%;
+    background-color: #FFFFCC;
+    height: auto;
+}
+
+section::after {
+    content: "";
+    display:flex;
+    clear: both;
+}
+
+
+ .image {
+     width: 100%;
+     height: auto;
+     position: relative;
+ }
+
+ .image img {
+     position: absolute;
+     right: 0;
+     left: 0;
+     top: 0;
+     bottom: 0;
+     margin: auto auto;
+ }
+
+ .imgcaption {
+     background: #000066;
+     color: #FFFFCC;
+     font-style: italic;
+     font-size: 10px;
+     padding: 2px;
+     text-align: center;
+ }
+  
+h1{
+    display: inline;
+    color: #000066;
+    font-family: Georgia;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+h2{
+    display: inline;
+    color: #333300;
+    font-family: Lato;
+    margin-left: 15px;
+    text-indent: 1em;
+    font-size: 110%;
+}
+
+
+/* Box model for paragraphs */
+p {
+    background-color: #FFFFCC;
+    color: #333300;
+    font-family: 'Lato';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.15;
+    border: none;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 330px;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    left: 0;
+    margin-left: 60px;
+    padding-bottom: 0;
+}
+
+/*Table style*/
+table#degreetable {
+    border-collapse: collapse;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+table th {
+    text-align: left;
+    background-color: #000066;
+    color: #FFFFCC;
+    padding: 4px 30px 4px 8px;
+}
+
+table td {
+    border: 1px solid #333300;
+    padding: 4px 8px;
+    color: #333300;
+}
+/*alternate row colors*/
+table tr:nth-child(odd) td {
+    background-color: #F8F8F8;
+}
+
+/* Form styling */
+.formcontainer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #333300;
+    background-color: #FFFFFF;
+    border-radius:  8px;
+    margin-top: 20px;
+    margin-bottom: 20px;   
+}
+
+.formgroup {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    }
+
+    .formgroup input,
+    .formgroup textarea {
+        width: 100%;
+        padding: 5px;
+        font-size: 18px;
+        border: 1px solid #333300;
+        margin-top: 5px;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    button [type="submit"] {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 20px;
+        font-size: 24px;
+        border-radius: 8px;
+        background-color: #333300;
+        color: #FFFFCC;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    button [type="submit"]:hover {
+        background-color: #000066
+    }
+
+ /* reducing space after unordered lists */
+ ul {
+    color: #333300;
+    margin-bottom: 0px;
+    margin-left: .5em;
+    padding-left: 50px;
+}
+
+blockquote {
+    margin: 30px auto;
+    width: 60%;
+    color: #000066;
+    padding: 5px 5px 5px 5px;
+    background: #FFFFCC;
+    border-left: 5px solid #000066;
+    font: 1.5em "Just Another Hand", cursive;
+    letter-spacing: 1.75px;
+}
+
+/*Button styling for Projects page */
+.project-buttons-container {
+   max-width: 1400px;
+   margin: 40px auto 0 auto;
+   background-color: #FFFFCC;
+   padding: 5px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.project-buttons {
+   background-color: #666600;
+   border: none;
+   color: #FFFFCC;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 20px;
+   margin: 4px 2px;
+   cursor: pointer;
+   font-weight: bold;
+   margin-top: 0;
+   margin-bottom: 20px;
+}
+
+/* Footer */
+  .footer {
+    display: flex;
+    bottom: 0px;
+    padding: 10px;
+    color: #FFFFCC;
+    text-align: center;
+    background: #333300;
+    list-style-type: none;
+
+  }
+
+  .footericons {
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin: 5px 250px;
+}
+
+    .footericons:hover {
+        opacity: 70%;
+    }
+
+/* icon grow transition/animation */
+    .icon {
+        width: 12px;
+        height: 12px;
+}
+
+    .iconbig {
+        position: absolute;
+        width: 0px;
+        transition: width 0.3s linear 0s; 
+        z-index: 10;
+    }
+
+    .icon:hover + .iconbig {
+        width: 24px;
+    }
+
+    @media screen and (max-width: 600px) {
+    .footer, .footericons {
+        font-size: 100%;
+        text-align:center;
+    }
+   
+}
+
+/* Media Queries for responsive design */
+@media only screen and (max-width: 1250px) {
+    tr {
+        font-size: 16px;
+    }
+
+    table#degreetable {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    tr {
+        font-size: 12px;
+    }
+    table#degreetable {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    p {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    p {
+        font-size: 1.25rem;
+        line-height: 1.25;
+    }
+}
+
+@media (max-width: 600px) {
+    aside, article {
+        width: 100%;
+        height: auto;
+    }
+}
+/* CSS pseudo-element for different first letter in each paragraph 
+p:first-letter{
+    font-size: 150%;
+    font-family: georgia;
+    color: #333300; 
+ }
+ */
+
+ /* CSS pseudo-element for indenting each paragraph 
+ p::first-line{
+     text-indent: 2em;
+ }
+*/
+
+/*print style*/
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+
+    .branding-logo,
+    .navbar,
+    .menu,
+    .menu-link,
+    .submenu,
+    .has-dropdown,
+    .img,
+    .header,
+    .side,
+    .footericons {
+        display: none;
+         }
+         .main-header {
+             margin-bottom: 0;
+             border: none;
+             text-align: center;
+         }
+         a:after {
+             content: "["attr(href)"]";
+             color: blue;
+         }
+         @page {
+             margin: 1in 1in 1in 1in;
+            }
+         p, ul {
+             orphans: 3;
+             widows: 3;
+             font-size: 11pt;
+            }
+        }
