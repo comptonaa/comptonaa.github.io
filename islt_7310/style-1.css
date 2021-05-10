@@ -254,20 +254,30 @@ blockquote {
 /* Footer */
   .footer {
     display: flex;
-    bottom: 0px;
+    justify-content: space-evenly;
+    text-align: center;
     padding: 10px;
     color: #FFFFCC;
-    text-align: center;
     background: #333300;
-    list-style-type: none;
+    margin: 0 auto;
+    width: 100%;
 
   }
-
   .footericons {
-    display: inline-flex;
+      float:left;
+      justify-content: space-evenly;
+  }
+  .footericons ul {
+    display: flex;
     justify-content: space-evenly;
-    margin: 5px 250px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
+
+    .footericons li {
+        margin-left: 0;
+    }
 
     .footericons:hover {
         opacity: 70%;
