@@ -1,4 +1,4 @@
-/* W3schools CSS validation returned no errors - 5/8/2021 */ 
+/* W3schools CSS validation returned no errors - 5/13/2021 */ 
 
 /* Font-face addition */
 
@@ -31,24 +31,26 @@ aside {
     display:inline;
     float: left;
     justify-content: center;
-    width: 15%;
+    width: 30%;
     height: auto;
     background:#000066;
-    padding: 30px;
+    padding: 20px;
 }
 
 article {
-    float: left;
-    padding: 30px;
-    width: 85%;
+    float: right;
+    position: relative;
+    padding: 20px;
+    width: 70%;
     background-color: #FFFFCC;
-    height: auto;
+    min-height: 100%;
 }
 
 section::after {
     content: "";
     display:flex;
     clear: both;
+    bottom: 0;
 }
 
 
@@ -157,7 +159,7 @@ table tr:nth-child(odd) td {
     align-items: center;
     justify-content: center;
     width: 90%;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     box-shadow: 0px 0px 20px #333300;
@@ -253,16 +255,19 @@ blockquote {
 
 /* Footer */
   .footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
     padding: 10px;
+    background-color: #333300;
     color: #FFFFCC;
-    background: #333300;
     margin: 0 auto;
     width: 100%;
-
   }
+
   .footericons {
       float:left;
       justify-content: space-evenly;
@@ -270,8 +275,6 @@ blockquote {
   .footericons ul {
     display: flex;
     justify-content: space-evenly;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
 }
 
