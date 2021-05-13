@@ -44,6 +44,7 @@ article {
     width: 70%;
     background-color: #FFFFCC;
     min-height: 100%;
+    margin-bottom: -50px;
 }
 
 section::after {
@@ -255,9 +256,10 @@ blockquote {
 
 /* Footer */
   .footer {
-    position: sticky;
+    position: fixed;
     left: 0;
     bottom: 0;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -265,7 +267,7 @@ blockquote {
     background-color: #333300;
     color: #FFFFCC;
     margin: 0 auto;
-    width: 100%;
+
   }
 
   .footericons {
@@ -336,7 +338,7 @@ blockquote {
 }
 
 @media  screen and (max-width: 600px) {
-    p {
+    p, h1, h2 {
         font-size: 1.15rem;
     }
 }
