@@ -270,10 +270,9 @@ blockquote {
 
   .footericons {
       display: inline;
-      justify-content: space-around;
       background-color: #333300;
       border: none;
-      padding: 10px;
+      padding: 0px 5px 0px 5px;
       color: #FFFFCC;
       text-align: center;
 
