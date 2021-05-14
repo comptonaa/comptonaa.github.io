@@ -254,11 +254,12 @@ blockquote {
 
 /* Footer */
   .footer {
-    position: fixed;
+    display: grid;
+    grid-template-columns: auto;
+    position: sticky;
     left: 0;
     bottom: 0;
     width: 100%;
-    display: flex;
     justify-content: space-evenly;
     text-align: center;
     padding-top: 10px;
@@ -268,11 +269,18 @@ blockquote {
   }
 
   .footericons {
-      float:left;
-      justify-content: space-evenly;
+      display: inline;
+      justify-content: space-around;
+      background-color: #333300;
+      border: none;
+      padding: 10px;
+      color: #FFFFCC;
+      text-align: center;
+
   }
   .footericons ul {
     display: flex;
+    list-style: none;
     justify-content: space-evenly;
     width: 100%;
 }
